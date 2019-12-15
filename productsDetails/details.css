@@ -1,0 +1,32 @@
+/* 放大镜，详情 */
+#main-details{
+    padding: 0 2rem;
+    border-radius: 1rem;
+    background:#fff;
+}
+/* 图片的样式 */
+#main-details img{
+    width: 60%;
+    height: 60%;
+}
+#main-details img:hover{
+    cursor: pointer;
+}
+#main-img{
+    padding: 0;
+    border-right:.1rem solid #ccc;
+}
+/* #main-img img{
+    margin-left:8rem;
+} */
+#main-img #box{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.2);
+    cursor:move;
+}
+#bigImg{
+    display: none;
+}

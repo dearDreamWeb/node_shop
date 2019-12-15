@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 主要部分 -->
+        <div class="container">
+            <!-- logo -->
+            <div id="header" class="row">
+                <div id="logo" class="col-md-4">
+                    <a href="http://localhost:6868">
+                        <img src="./images/logo.png" alt="宝贝餐饮">
+                    </a>
+                </div>
+                <div id="header-login" class="col-md-2 col-md-offset-6"></div>
+            </div>
+            <!-- 导航栏 -->
+            <div id="nav" class="row">
+                <div id="nav-next">
+                    <ul class="nav">
+                        <li class="col-md-3"><a href="http://localhost:6868/index.html">首页</a></li>
+                        <li class="col-md-3"><a href="http://localhost:6868/products-tea">精品奶茶</a></li>
+                        <li class="col-md-3"><a href="http://localhost:6868/products-cake">精品甜点</a></li>
+                        <li class="col-md-3"><a href="http://localhost:6868/products-mix">精品套餐</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="row" id="brannerAll">
+                <div id="branner">
+                    <ul>
+                        <a href="http://localhost:6868/products-tea">
+                            <li></li>
+                        </a>
+                        <a href="http://localhost:6868/products-cake">
+                            <li></li>
+                        </a>
+                        <a href="http://localhost:6868/products-mix">
+                            <li></li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- 选择按钮 -->
+                <div id="options">
+                    <div class="btnClick"></div>
+                    <div class="btnClick"></div>
+                    <div class="btnClick"></div>
+                </div>
+            </div>
+            <!-- 公告 -->
+            <div id="ad" class="row">
+                <div class="col-md-1">
+                    <h3>公告 |</h3>
+                </div>
+                <div class="col-md-11" id="content"></div>
+            </div>
+            <!-- 分割线 -->
+            <div id="line" class="row">
+                <h3>美味餐饮</h3>
+            </div>
+            <!-- 商品区域 -->
+            <div id="products" class="row"></div>
+        </div>
+
+        <!-- 底部 -->
+        <div id="footer"> </div>
+
+    </div>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="index.js"></script>
+    <!-- 登录模块 -->
+    <script type="module" src="../js/module-import/import-userLogin.js"></script>
+    <!-- 遍历商品模块 -->
+    <script type="module" src="./js/module-import/improt-products.js"></script>
+    <!-- 底部模块 和滚动监听 -->
+    <script type="module" src="./js/module-import/import-footer-scroll.js"></script>
+    <!-- 右边导航：账户、信息 -->
+    <script type="module" src="./js/module-import/import-rightNav.js"></script>
+</body>
+
+</html>

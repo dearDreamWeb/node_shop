@@ -1,0 +1,17 @@
+#nav ul li:nth-child(2){
+    background: #e03e0e;
+}
+#content>div{
+    margin-top:6rem;
+    padding: 1rem;
+    background: #d8d6d5;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 1rem #ccc;
+}
+#content .form-group{
+    margin-bottom: 3rem;
+}
+
+#content .btn{
+    margin:3rem 0 1rem 0;
+}

@@ -1,0 +1,128 @@
+body {
+  background: #f2f2f2;
+}
+/* 轮播图样式 */
+#brannerAll {
+  position: relative;
+}
+#brannerAll:hover {
+  cursor: pointer;
+}
+#branner ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+#branner {
+  overflow: hidden;
+}
+#options {
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  margin-left: -2.5rem;
+}
+#options .btnClick {
+  float: left;
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #ccc;
+}
+#options .btnClick:hover {
+  cursor: pointer;
+}
+.active {
+  background: #f40;
+}
+
+/* header 登录注册 */
+#header-login {
+  margin-top: 1rem;
+}
+#header-login input:hover {
+  color: #f40;
+}
+#header-login input:focus {
+  outline: 0;
+}
+/* 导航栏  */
+#nav {
+  /* height: 4rem; */
+  background: rgba(0, 0, 0, 0.8);
+}
+#nav ul li {
+  padding: 0;
+  text-align: center;
+}
+#nav a {
+  color: #fff;
+  text-decoration: none;
+}
+#nav a:hover {
+  color: #f40;
+}
+/* 广告 */
+#ad {
+  margin-top: -1rem;
+  line-height: 4rem;
+  background: #e9e9ec;
+}
+#ad h3 {
+  margin-top: 5px;
+  vertical-align: middle;
+}
+#ad #content {
+  color: #ef0a0a;
+}
+/* 
+    产品
+ */
+#products .productsImg img {
+  width: 100%;
+}
+#products .productsImg {
+  position: relative;
+}
+/* 遮罩层样式 */
+#products .productsImg .mark {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ef0a0a;
+  background: rgba(204, 204, 204, 0.5);
+}
+#products .productsImg .mark:hover {
+  cursor: pointer;
+}
+#products .productsBox {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff;
+}
+#products .productsBox:hover {
+  padding: 0px;
+  box-shadow: 0 0 0.8rem #f56830;
+}
+#products .productsIn{
+  text-align: center;
+}
+#products .productsIn .btn {
+  float: right;
+  margin-top:.5rem;
+}
+/* 加入购物车聚焦去掉外边框 */
+#products .productsIn .btn:focus {
+  outline: none;
+}
+#products .price {
+  font-size: 3rem;
+  color: rgb(248, 12, 12);
+}

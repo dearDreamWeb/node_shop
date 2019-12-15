@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: -webkit-linear-gradient(#45fb9f, #0ea3ab);
+            /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#45fb9f, #0ea3ab);
+            /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#45fb9f, #0ea3ab);
+            /* Firefox 3.6 - 15 */
+            background: linear-gradient(#45fb9f, #0ea3ab);
+            /* 标准的语法 */
+        }
+
+        #register {
+            position: relative;
+            margin-top: 10rem;
+            padding: 1rem;
+        }
+
+        #register div {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        #register div input {
+            height: 4.5rem;
+        }
+        h2{
+            color: #fff;
+            text-align: center;
+            text-shadow: .1rem .1rem rgb(112, 112, 112);
+        }
+
+        b {
+            color: #f33;
+        }
+
+        #canvasVal {
+            display: inline-block;
+            width: 50%;
+        }
+
+        canvas {
+            display: inline-block;
+            width: 48%;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="register" class="col-md-6 col-md-offset-3 ">
+            <div>
+                <h2>用户注册</h2>
+            </div>
+            <!-- 用户 -->
+            <div class="input-group" id="userGroup">
+                <span class="input-group-addon" id="basic-addon1">用户</span>
+                <input type="text" id="user" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
+            </div>
+            <!-- 密码 -->
+            <div class="input-group" id="passwordGroup">
+                <span class="input-group-addon" id="basic-addon2">密码</span>
+                <input type="text" id="password" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+            </div>
+            <!-- canvas验证码 -->
+            <div id="canvasGroup">
+                <input type="text" id="canvasVal" class="form-control" placeholder="验证码">
+                <canvas width="250" height="70"></canvas>
+            </div>
+            <!-- 注册按钮 -->
+            <div class="input-group">
+                <input type="button" value="注册" id="registerBtn" class="btn btn-primary btn-block">
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="./register.js"></script>
+</body>
+
+</html>

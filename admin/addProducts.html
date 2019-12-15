@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/addProducts.css">
+    <title>管理员系统</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content" class="col-md-10">
+            <!-- 添加商品信息 -->
+            <div class="col-md-6 col-md-offset-3">
+                <!-- form框架  -->
+                <form id="form1" action="http://localhost:6868/admin/add" method="POST" enctype="multipart/form-data">
+
+                    <legend>添加商品</legend>
+
+                    <div class="form-group">
+                        <label for="a">商品名称</label>
+                        <input type="text" name="productsName" class="form-control" id="a" placeholder="商品名称">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="b">商品介绍</label>
+                        <input type="text" name="productsIntroduce" class="form-control" id="b" placeholder="商品介绍">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c">商品价格</label>
+                        <input type="text" name="productsPrice" class="form-control" id="c" placeholder="商品价格">
+                    </div>
+
+                    <div class="form-group">
+                        <label>商品图片</label>
+                        <input type="file" name="productsImg" class="form-control">
+                    </div>
+
+                    <select name="type" id="input" class="form-control">
+                        <option value="tea">奶茶 </option>
+                        <option value="cake">蛋糕 </option>
+                        <option value="mix">套餐</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary form-control">添加</button>
+                </form>
+            </div>
+
+        </div>
+        <div id="footer" class="col-md-12" style=" background: #e2e2e2"></div>
+    </div>
+
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- from表单要用的ajax接收数据 -->
+    <script src="../js/jquery.form.js"></script>
+    <script src="./js/base.js"></script>
+     <!-- 管理员系统头部和侧边导航栏模块 -->
+    <script type="module" src="./js/module-import.js"></script>
+    <!-- 底部模块 -->
+    <script type="module" src="../js/module-import/import-footer-scroll.js"></script>
+    <script>
+        $($('.btn')).off('click').on('click', () => {
+            $('#form1').ajaxForm((data) => {
+                alert(data)
+            })
+        })
+         //删除商家承诺
+        $(window).load(()=>{
+            $($('#summary')).remove()
+        })
+    </script>
+</body>
+
+</html>

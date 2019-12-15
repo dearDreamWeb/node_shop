@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>管理员系统</title>
+    <style>
+        ul::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper" class="container">
+        <!-- logo -->
+        <div id="header" class="row">
+            <div id="logo" class="col-md-4">
+                <a href="http://localhost:6868">
+                    <img src="../images/logo.png" alt="宝贝餐饮">
+                </a>
+            </div>
+            <div id="header-login" class="col-md-2 col-md-offset-6"></div>
+        </div>
+        <!-- 加载所有商品 -->
+        <div class="col-md-12">
+            <div id="allProducts">
+                <!-- 商品列表表头 -->
+                <ul class="row" style="text-align: center;">
+                    <li class="col-md-8">商品信息</li>
+                    <li class='col-md-2'>价格</li>
+                    <li class='col-md-2'>操作</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-1"><input type="checkbox" id="allCheck" name="" id="">全选</div>
+                <div class="col-md-4 col-md-offset-5" id="money" style="color:red ;text-align: right;font-size: 3rem;">
+                    ￥00
+                </div>
+                <div class="col-md-2">
+                        <button type="button" id="checkOut" class="btn btn-large btn-block btn-danger" >结算</button>
+                </div>
+             
+            </div>
+        </div>
+        <div id="footer" class="col-md-12" style=" background: #e2e2e2"></div>
+    </div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- 登录模块 -->
+    <script type="module" src="../js/module-import/import-userLogin.js"></script>
+    <!-- 订单商品模块 -->
+    <script type="module" src="./js/import-productsOrder.js"></script>
+    <!-- 底部模块 -->
+    <script type="module" src="../js/module-import/import-footer-scroll.js"></script>
+    <script>
+        //删除商家承诺
+        $(window).load(() => {
+            $($('#summary')).remove()
+        })
+
+    </script>
+</body>
+
+</html>

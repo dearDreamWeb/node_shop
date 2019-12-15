@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>精品蛋糕</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 主要部分 -->
+        <div class="container">
+            <!-- logo -->
+            <div id="header" class="row">
+                <div id="logo" class="col-md-4">
+                    <a href="http://localhost:6868">
+                        <img src="../images/logo.png" alt="">
+                    </a>
+                </div>
+                <div id="header-login" class="col-md-2 col-md-offset-6">
+                    <input type="button" value="登录" id="header-loginBtn" class="btn btn-default">
+                    <input type="button" value="注册" id="header-registerBtn" class="btn btn-default">
+                </div>
+            </div>
+            <!-- 导航栏 -->
+            <div id="nav" class="row">
+                <div id="nav-next">
+                    <ul class="nav">
+                        <li class="col-md-3"><a href="http://localhost:6868/index.html">首页</a></li>
+                        <li class="col-md-3"><a href="http://localhost:6868/products-tea">精品奶茶</a></li>
+                        <li class="col-md-3"><a href="http://localhost:6868/products-cake">精品甜点</a></li>
+                        <li class="col-md-3"><a href="http://localhost:6868/products-mix">精品套餐</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 商品介绍 -->
+            <div class="row">
+                <h2>精品蛋糕</h2>
+            </div>
+            <!-- 商品区域 -->
+            <div id="products" class="row"></div>
+        </div>
+        <!-- 底部 -->
+        <div id="footer"> </div>
+        <script src="../js/jquery-1.11.3.min.js"></script>
+        <!-- 登录模块 -->
+        <script type="module" src="../js/module-import/import-userLogin.js"></script>
+        <!-- 底部模块 -->
+        <script type="module" src="./js/improt-products.js"></script>
+        <!-- 商品模块 -->
+        <script type="module" src="./js/import-productsCake-footer-scroll.js"></script>
+        <!-- 右边导航：账户、信息 -->
+        <script type="module" src="../js/module-import/import-rightNav.js"></script>
+</body>
+
+</html>

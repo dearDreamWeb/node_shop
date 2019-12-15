@@ -1,0 +1,37 @@
+{
+  "id": "1529324",
+  "name": "shop",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5706",
+      "name": "七天无理由退换货",
+      "font_class": "qitianwuliyoutuihuanhuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "736502",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "7551427",
+      "name": "所在省份",
+      "font_class": "suozaishengfen",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "10809198",
+      "name": "五角星 星型 ",
+      "font_class": "changyongtubiao-xianxingdaochu-zhuanqu-",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    }
+  ]
+}

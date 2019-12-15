@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav ul li:nth-child(3){
+    background: #e03e0e;
+}
+#allUsers ul{
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+#allUsers ul li{
+    border: .1rem solid #ccc;
+    font-size: 1.5rem;
+}
+/* 设置删除按钮的li里的样式 */
+#allUsers .allUsers-ul .deletData{
+    background: #f40;
+    text-align: center;
+}
+/* 格式化删除键a标签的样式 */
+#allUsers .allUsers-ul .deletBtn {
+    text-decoration: none;
+    color: #fff;
+
+}
+#allUsers .allUsers-ul .deletBtn:hover{
+    cursor: pointer;
+}
+.active{
+    background: #ccc
+}

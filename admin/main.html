@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>管理员系统</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 加载所有商品 -->
+        <div class="col-md-10">
+            <div id="allProducts">
+                <!-- 商品列表表头 -->
+                <ul class="allProducts-ul row">
+                    <li class='col-md-1'>
+                        商品名字
+                    </li>
+                    <li class='col-md-1'>
+                        商品类型
+                    </li>
+                    <li class='col-md-1'>
+                        商品价格
+                    </li>
+                    <li class='col-md-4'>
+                        商品介绍
+                    </li>
+                    <li class='col-md-5'>
+                        图片路径
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" class="col-md-12" style=" background: #e2e2e2"></div>
+    </div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="./js/base.js"></script>
+    <!-- 管理员系统头部和侧边导航栏模块 -->
+    <script type="module" src="./js/module-import.js"></script>
+    <!-- 本页面要用的js -->
+    <script src="./js/main.js"></script>
+    <!-- 底部模块 -->
+    <script type="module" src="../js/module-import/import-footer-scroll.js"></script>
+    <script >
+        //删除商家承诺
+        $(window).load(()=>{
+            $($('#summary')).remove()
+        })
+       
+    </script>
+</body>
+
+</html>
