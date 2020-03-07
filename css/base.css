@@ -111,12 +111,12 @@ ul li {
   padding: 0px;
   box-shadow: 0 0 0.8rem #f56830;
 }
-#products .productsIn{
+#products .productsIn {
   text-align: center;
 }
 #products .productsIn .btn {
   float: right;
-  margin-top:.5rem;
+  margin-top: 0.5rem;
 }
 /* 加入购物车聚焦去掉外边框 */
 #products .productsIn .btn:focus {
@@ -125,4 +125,23 @@ ul li {
 #products .price {
   font-size: 3rem;
   color: rgb(248, 12, 12);
+}
+
+/* 底部图标设置响应式样式  */
+@media screen and (min-width: 552px) and (max-width: 992px) {
+  #summary .container {
+    display: flex;
+  }
+  #summary .container .icon {
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 552px) {
+  #summary .container .icon {
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+  }
 }
